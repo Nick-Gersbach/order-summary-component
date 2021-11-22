@@ -21,21 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style-type: none;
-}
-
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -76,7 +61,7 @@ ul {
   z-index: 1;
 }
 
-.hero-image {
+img.hero-img {
   width: 100%;
   height: auto;
 }
@@ -156,8 +141,68 @@ Media Queries
 
 */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   body {
-    background-color: lightblue;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  .wave-showcase {
+    display: none;
+  }
+
+  .position-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+
+  /* img.hero-image {
+    width: 100%;
+    height: auto;
+    display: none;
+  } */
+
+  .card-container {
+    border-radius: 10px;
+    background: #fff;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+  }
+
+  .order-summary p {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 25px;
+  }
+
+  .annual-plan-text {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 810px) and (max-width: 1250px) {
+  body {
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  .wave-showcase {
+    display: none;
+  }
+
+  .position-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+
+  .card-container {
+    margin-top: 2rem;
   }
 }
