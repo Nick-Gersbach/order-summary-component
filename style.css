@@ -40,8 +40,25 @@ body {
   opacity: 0.9;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wave-bg {
   z-index: -1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+img.hero-img {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wave-showcase {
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .position-container {
